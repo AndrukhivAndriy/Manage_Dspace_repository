@@ -15,7 +15,7 @@ def CheckInputVar():
     else:
         return handleid
 def tableprepare():
-    q = "delete from resourcepolicy where eperson_id IN (select uuid from eperson where email='andrie83@gmail.com')"
+    q = "delete from resourcepolicy where eperson_id IN (select uuid from eperson where email='admin@admin.ua')"
     cursor.execute(q)
 
 def changepolicy(collection_id):
