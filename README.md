@@ -49,7 +49,9 @@ and then you can run it from your computer. This row changes access permissions 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-## Import/export collections (for community or sub-community - not working). Info from - [https://wiki.lyrasis.org/display/DSDOC7x/Importing+and+Exporting+Items+via+Simple+Archive+Format](https://wiki.lyrasis.org/display/DSDOC7x/Importing+and+Exporting+Items+via+Simple+Archive+Format)
+## Import/export collections (for community or sub-community - not working). 
+
+Info from - [https://wiki.lyrasis.org/display/DSDOC7x/Importing+and+Exporting+Items+via+Simple+Archive+Format](https://wiki.lyrasis.org/display/DSDOC7x/Importing+and+Exporting+Items+via+Simple+Archive+Format)
 
 Export:
 
