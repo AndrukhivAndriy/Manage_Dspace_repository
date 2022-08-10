@@ -1,7 +1,7 @@
 # Export/import/backup data from Dspace repository
 Those instruments can be useful for exchanging content between repositories. Scripts were tested on v6.3 . More info - [https://wiki.lyrasis.org/display/DSDOC6x/AIP+Backup+and+Restore](https://wiki.lyrasis.org/display/DSDOC6x/AIP+Backup+and+Restore).
 
-## Export content - community or collection
+## Export content - community or collection via AIP
 
 */dspace/bin/dspace packager -u -d -a -t AIP -e admin@email.ua -i 12345678/1111 /home/dump_dspace/open.zip*
 
@@ -11,7 +11,7 @@ Those instruments can be useful for exchanging content between repositories. Scr
 	
 	admin@email.ua -- admin repository email
 	
-## Import content - community or collection
+## Import content - community or collection via AIP
 	
 */dspace/bin/dspace packager -u -r -a -k -t AIP -e admin@email.ua -p 12345678/1111 -o skipIfParentMissing=true /home/dump_dspace/open.zip*
 
@@ -49,3 +49,12 @@ and then you can run it from your computer. This row changes access permissions 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+## Import/export collections (for community or sub-community - not working). Info from - [https://wiki.lyrasis.org/display/DSDOC7x/Importing+and+Exporting+Items+via+Simple+Archive+Format](https://wiki.lyrasis.org/display/DSDOC7x/Importing+and+Exporting+Items+via+Simple+Archive+Format)
+
+Export:
+
+	[dspace]/bin/dspace export -t ITEM -i itemID_or_handle -d /path/to/destination -n seq_num
+
+Import:
+
+	[dspace]/bin/dspace import -a -e joe@user.com -c CollectionID -s items_dir -m mapfile
