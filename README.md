@@ -32,8 +32,10 @@ where *cleanup -v* -- will delete all trash
 1. You have to install/update Python. It works with v3 
 2. Intall packet maneger - pip. For Ubuntu -- *sudo apt install python3-pip*
 3. install dependencies - *pip install psycopg2-binary*
-4. Edit file *change_per_com.py*. Find row 63 *connection = psycopg2.connect* and change all parameters in accordance to your Postgresql server connection. 5. Run script *python3 change_per_com.py*
-6. Enter community hande id
+4. Edit file *change_per_com.py*. Find row 63 *connection = psycopg2.connect* and change all parameters in accordance to your Postgresql server connection. 
+5. Edit file *change_per_com.py*. Find row 18 *where email=admin@admin.ua* and change email according to admin email of destination repository 
+6. Run script *python3 change_per_com.py*
+7. Enter community hande id
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
