@@ -1,3 +1,5 @@
+import psycopg2
+from psycopg2 import Error
 def changepolicy(collection_id):
     s = "select uuid from item where owning_collection in" \
         " (select resource_id from handle where handle= \'" + collection_id + "\')"
